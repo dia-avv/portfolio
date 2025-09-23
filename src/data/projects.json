@@ -4,13 +4,115 @@
     "title": "Digitalising the experience at the Natural History Museum Aarhus",
     "description": "A museum app that combines essential info with immersive, interactive exhibition experiences.",
     "image": "images/nhm.png",
-    "categories": ["Frontend", "UX/UI", "Content Creation", "SoMe"]
+    "categories": ["Frontend", "UX/UI", "Content Creation", "SoMe"],
+    "problem": "How can The Naturhistorisk Museum use digital solutions to attract and engage an 18+ audience in a meaningful and feasible way?",
+    "problemPhoto": "images/nhm_problem.png",
+    "process": [
+      {
+        "title": "Research",
+        "description": "Finding out the most about our client and target group."
+      },
+      { "title": "Mapping", "description": "Summarizing the research." },
+      {
+        "title": "Ideation",
+        "description": "Brainstorming and sketching ideas, and in the end picking the best one."
+      },
+      {
+        "title": "Design",
+        "description": "Prototyping and testing our solution."
+      },
+      {
+        "title": "Development",
+        "description": "Turning our prototype into a working, interactive solution."
+      }
+    ],
+    "technologies": [
+      {
+        "name": "React",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+      },
+      {
+        "name": "HTML",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+      },
+      {
+        "name": "CSS",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+      }
+    ],
+    "links": [
+      {
+        "github": "https://github.com/Flex-Wrap/nhm-app.git"
+      },
+
+      { "solution": "https://flex-wrap.github.io/nhm-app/" },
+      {
+        "figma": "https://www.figma.com/design/xlWbGpj38PPd8sFw2yXObn/Design-2?node-id=132-6488&t=CMbgUKjfHiLYK6Vl-1"
+      }
+    ]
   },
   {
     "id": "botnicalgarden",
     "title": "Enhancing the experience at the Botnical Garden Aarhus",
     "description": "An interactive museum app that guides visitors through the garden with storytelling, featuring chatbots that bring the plants to life.",
     "image": "images/botanical.png",
-    "categories": ["Frontend", "UX/UI"]
+    "categories": ["Frontend", "UX/UI"],
+    "problem": "How might we transform a passive and repetitive garden visit into an engaging, interactive adventure that keeps visitors connected and entertained?",
+    "problemPhoto": "images/botanical_problem.png",
+    "process": [
+      {
+        "title": "Research",
+        "description": "Finding out the most about our client and target group."
+      },
+      { "title": "Mapping", "description": "Summarizing the research." },
+      {
+        "title": "Ideation",
+        "description": "Brainstorming and sketching ideas, and in the end picking the best one."
+      },
+      {
+        "title": "Design",
+        "description": "Prototyping and testing our solution."
+      },
+      {
+        "title": "Development",
+        "description": "Turning our prototype into a working, interactive solution."
+      }
+    ],
+    "technologies": [
+      {
+        "name": "React",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+      },
+      {
+        "name": "TypeScript",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+      },
+      {
+        "name": "OpenAI API",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/0/04/OpenAI_Logo.svg"
+      },
+      {
+        "name": "HTML",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+      },
+      {
+        "name": "CSS",
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+      }
+    ],
+    "links": [
+      {
+        "github": "https://github.com/Flex-Wrap/botanical-garden.git"
+      },
+
+      { "solution": "https://flex-wrap.github.io/botanical-garden/" },
+      {
+        "figma": "https://www.figma.com/design/TMFKboASfVq4BwjCyhHJMQ/Style-tile-Botanical-garden--Copy-?node-id=139-458&t=oe4JtsPCzubroRJa-1"
+      }
+    ]
   }
 ]

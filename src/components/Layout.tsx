@@ -7,10 +7,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const pathname = location.pathname;
+
   // Only show header on these routes
-  const showHeader = ["/aboutme", "/mywork", "/sudoku"].includes(
-    location.pathname
-  );
+  const showHeader =
+    ["/aboutme", "/mywork", "/sudoku"].includes(pathname) ||
+    pathname.startsWith("/projects/");
 
   const handleContactClick = (
     e: React.MouseEvent<HTMLAnchorElement | HTMLButtonElement>
@@ -40,74 +42,74 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <div className="relative w-full min-h-screen overflow-x-hidden flex flex-col">
       {showHeader && (
         <div className={styles.headerBox}>
-        <header className={styles.header}>
-          {/* Back button */}
-          <button
-            onClick={() => navigate(-1)}
-            className={styles.backButton}
-            aria-label="Go back"
-          >
-            <img
-              src="./images/arrow-blue.png"
-              alt=""
-              className={styles.backArrow}
+          <header className={styles.header}>
+            {/* Back button */}
+            <button
+              onClick={() => navigate(-1)}
+              className={styles.backButton}
+              aria-label="Go back"
+            >
+              <img
+                src="./images/arrow-blue.png"
+                alt=""
+                className={styles.backArrow}
+              />
+            </button>
+
+            {/* Burger button */}
+            <button
+              className={styles.burger}
+              onClick={() => setMenuOpen(!menuOpen)}
+              aria-label="Toggle menu"
+            >
+              <span />
+              <span />
+              <span />
+            </button>
+
+            {/* Nav links */}
+            <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
+              <Link
+                to="/"
+                className={styles.navLink}
+                onClick={() => setMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link
+                to="/mywork"
+                className={styles.navLink}
+                onClick={() => setMenuOpen(false)}
+              >
+                My Work
+              </Link>
+              <Link
+                to="/aboutme"
+                className={styles.navLink}
+                onClick={() => setMenuOpen(false)}
+              >
+                About
+              </Link>
+              <a
+                href="#footer"
+                onClick={handleContactClick}
+                className={styles.navLink}
+              >
+                Contact
+              </a>
+              <Link
+                to="/sudoku"
+                className={styles.navLink}
+                onClick={() => setMenuOpen(false)}
+              >
+                Sudoku
+              </Link>
+            </nav>
+            <div
+              className={`${styles.overlay} ${menuOpen ? styles.open : ""}`}
+              onClick={() => setMenuOpen(false)} // clicking outside closes menu
             />
-          </button>
-
-          {/* Burger button */}
-          <button
-            className={styles.burger}
-            onClick={() => setMenuOpen(!menuOpen)}
-            aria-label="Toggle menu"
-          >
-            <span />
-            <span />
-            <span />
-          </button>
-
-          {/* Nav links */}
-          <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
-            <Link
-              to="/"
-              className={styles.navLink}
-              onClick={() => setMenuOpen(false)}
-            >
-              Home
-            </Link>
-            <Link
-              to="/mywork"
-              className={styles.navLink}
-              onClick={() => setMenuOpen(false)}
-            >
-              My Work
-            </Link>
-            <Link
-              to="/aboutme"
-              className={styles.navLink}
-              onClick={() => setMenuOpen(false)}
-            >
-              About
-            </Link>
-            <a
-              href="#footer"
-              onClick={handleContactClick}
-              className={styles.navLink}
-            >
-              Contact
-            </a>
-            <Link
-              to="/sudoku"
-              className={styles.navLink}
-              onClick={() => setMenuOpen(false)}
-            >
-              Sudoku
-            </Link>
-          </nav>
-          <div
-            className={`${styles.overlay} ${menuOpen ? styles.open : ""}`}
-            onClick={() => setMenuOpen(false)} // clicking outside closes menu
-          />
-        </header>
+          </header>
         </div>
       )}
 
