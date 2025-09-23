@@ -1,6 +1,10 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import styles from "./Cover.module.css";
+import waves from "../images/waves.png";
+import spiral from "../images/spiral.png";
+import starfish from "../images/starfish.png";
+import arrow from "../images/arrow.png";
 
 export default function Cover() {
   const controls = useAnimation();
@@ -70,7 +74,7 @@ export default function Cover() {
 
         {/* Spiral */}
         <motion.img
-          src="/images/spiral.png"
+          src={spiral}
           alt="spiral"
           className={styles.spiral}
           animate={{ y: [0, -15, 0] }}
@@ -79,7 +83,7 @@ export default function Cover() {
 
         {/* Starfish */}
         <motion.img
-          src="/images/starfish.png"
+          src={starfish}
           alt="starfish"
           className={styles.starfish}
           animate={{ y: [0, -15, 0] }}
@@ -88,7 +92,7 @@ export default function Cover() {
 
         {/* Waves */}
         <motion.img
-          src="/images/waves.png"
+          src={waves}
           alt="waves"
           className={styles.waves}
           animate={{ x: [0, 15, 0] }}
@@ -109,7 +113,7 @@ export default function Cover() {
 
       {/* Arrow */}
       <motion.img
-        src="/images/arrow.png"
+        src={arrow}
         alt="arrow"
         className={styles.arrow}
         initial={{ y: 50, opacity: 0 }}

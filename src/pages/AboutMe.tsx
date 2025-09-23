@@ -2,6 +2,24 @@ import { motion, easeOut } from "framer-motion";
 import type { Variants } from "framer-motion";
 import styles from "./AboutMe.module.css";
 import { useEffect } from "react";
+import avatar from "../images/me.png";
+import react from "../images/react.png";
+import typescript from "../images/typescript.png";
+import javascript from "../images/javascript.png";
+import tailwind from "../images/tailwind.png";
+import html from "../images/html.png";
+import css from "../images/css.png";
+import github from "../images/github.png";
+import firebase from "../images/firebase.png";
+import vscode from "../images/vscode.png";
+import vite from "../images/vite.png";
+import node from "../images/node.png";
+import framermotion from "../images/framermotion.png";
+import figma from "../images/figma.png";
+import photoshop from "../images/photoshop.png";
+import premierepro from "../images/premierepro.png";
+import aftereffects from "../images/aftereffects.png";
+import notion from "../images/notion.png";
 
 export default function AboutMe() {
   useEffect(() => {
@@ -46,7 +64,7 @@ export default function AboutMe() {
         {/* Profile Row */}
         <motion.div className={styles.profileRow} variants={itemVariants}>
           <motion.img
-            src="/images/me.png"
+            src={avatar}
             alt="avatar"
             className={styles.avatar}
             whileHover={{ scale: 1.05 }}
@@ -93,18 +111,18 @@ export default function AboutMe() {
             <h3>Where I Work Best</h3>
             <ul>
               {[
-                { src: "/images/react.png", label: "React" },
-                { src: "/images/typescript.png", label: "TypeScript" },
-                { src: "/images/javascript.png", label: "JavaScript" },
-                { src: "/images/tailwind.png", label: "Tailwind" },
-                { src: "/images/html.png", label: "HTML" },
-                { src: "/images/css.png", label: "CSS" },
-                { src: "/images/github.png", label: "GitHub" },
-                { src: "/images/firebase.png", label: "Firebase" },
-                { src: "/images/vscode.png", label: "Visual Studio Code" },
-                { src: "/images/vite.png", label: "Vite" },
-                { src: "/images/node.png", label: "Node.js" },
-                { src: "/images/framermotion.png", label: "Framer Motion" },
+                { src: react, label: "React" },
+                { src: typescript, label: "TypeScript" },
+                { src: javascript, label: "JavaScript" },
+                { src: tailwind, label: "Tailwind" },
+                { src: html, label: "HTML" },
+                { src: css, label: "CSS" },
+                { src: github, label: "GitHub" },
+                { src: firebase, label: "Firebase" },
+                { src: vscode, label: "Visual Studio Code" },
+                { src: vite, label: "Vite" },
+                { src: node, label: "Node.js" },
+                { src: framermotion, label: "Framer Motion" },
               ].map((tool, i) => (
                 <motion.li
                   key={i}
@@ -128,11 +146,11 @@ export default function AboutMe() {
             <h3>But I Know My Way Around In</h3>
             <ul>
               {[
-                { src: "/images/figma.png", label: "Figma" },
-                { src: "/images/photoshop.png", label: "Photoshop" },
-                { src: "/images/premierepro.png", label: "Premiere Pro" },
-                { src: "/images/aftereffects.png", label: "After Effects" },
-                { src: "/images/notion.png", label: "Notion" },
+                { src: figma, label: "Figma" },
+                { src: photoshop, label: "Photoshop" },
+                { src: premierepro, label: "Premiere Pro" },
+                { src: aftereffects, label: "After Effects" },
+                { src: notion, label: "Notion" },
               ].map((tool, i) => (
                 <motion.li
                   key={i}

@@ -2,6 +2,10 @@ import { useRef } from "react";
 import Cell from "./Cell";
 import { easeOut, motion, useInView } from "framer-motion";
 import styles from "./Grid.module.css";
+import shellBlue from "../images/shell-blue.png";
+import starfishBlue from "../images/starfish-blue.png";
+import palmtreeBlue from "../images/palmtree-blue.png";
+import wavesBlue from "../images/waves-blue.png";
 
 export default function Grid() {
   const titles: string[] = [
@@ -36,19 +40,19 @@ export default function Grid() {
   return (
     <div className={styles.gridWrapper}>
       <img
-        src="/images/shell-blue.png"
+        src={shellBlue}
         className={`${styles.backgroundIcon} ${styles.iconTopLeft}`}
       />
       <img
-        src="/images/starfish-blue.png"
+        src={starfishBlue}
         className={`${styles.backgroundIcon} ${styles.iconTopRight}`}
       />
       <img
-        src="/images/palmtree-blue.png"
+        src={palmtreeBlue}
         className={`${styles.backgroundIcon} ${styles.iconBottomLeft}`}
       />
       <img
-        src="/images/waves-blue.png"
+        src={wavesBlue}
         className={`${styles.backgroundIcon} ${styles.iconBottomRight}`}
       />
       <motion.div
