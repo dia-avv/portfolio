@@ -45,6 +45,11 @@
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
       }
     ],
+    "gallery": [
+      "images/nhm-gallery1.png",
+      "images/nhm-gallery2.png",
+      "images/nhm-gallery3.png"
+    ],
     "links": [
       {
         "github": "https://github.com/Flex-Wrap/nhm-app.git"
@@ -105,6 +110,10 @@
         "name": "CSS",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
       }
+    ],
+    "gallery": [
+      "images/botanical-gallery1.png",
+      "images/botanical-gallery2.png"
     ],
     "links": [
       {
