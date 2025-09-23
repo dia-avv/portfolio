@@ -23,19 +23,22 @@ export default function MyWork() {
             to={`/projects/${project.id}`}
             className={styles.card}
           >
-            <div>
-              <img src={`${import.meta.env.BASE_URL}${project.image}`} alt={project.title} className={styles.coverPhoto}/>
-              <div>
-                <h2>{project.title}</h2>
-                <p>{project.description}</p>
+            <img
+              src={`${import.meta.env.BASE_URL}${project.image}`}
+              alt={project.title}
+              className={styles.coverPhoto}
+            />
+            <div className={styles.cardContent}>
+              <h2 className={styles.projectTitle}>{project.title}</h2>
+              <p>{project.description}</p>
+
+              <div className={styles.categories}>
+                {project.categories.map((category) => (
+                  <span key={category} className={styles.category}>
+                    {category}
+                  </span>
+                ))}
               </div>
-            </div>
-            <div className={styles.categories}>
-              {project.categories.map((category) => (
-                <span key={category} className={styles.category}>
-                  {category}
-                </span>
-              ))}
             </div>
           </Link>
         ))}
