@@ -1,0 +1,16 @@
+[
+  {
+    "id": "naturhistoriskmuseum",
+    "title": "Digitalising the experience at the Natural History Museum Aarhus",
+    "description": "A museum app that combines essential info with immersive, interactive exhibition experiences.",
+    "image": "images/nhm.png",
+    "categories": ["Frontend", "UX/UI", "Content Creation", "SoMe"]
+  },
+  {
+    "id": "botnicalgarden",
+    "title": "Enhancing the experience at the Botnical Garden Aarhus",
+    "description": "An interactive museum app that guides visitors through the garden with storytelling, featuring chatbots that bring the plants to life.",
+    "image": "images/botanical.png",
+    "categories": ["Frontend", "UX/UI"]
+  }
+]
