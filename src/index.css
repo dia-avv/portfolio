@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap");
+
+:root {
+  --color-orange: #f3790d;
+  --color-blue: #00317b;
+  --color-beige: #f8f0d8;
+
+  --font-heading: "Bagel Fat One", sans-serif;
+  --font-body: "Helvetica Neue", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: var(--color-beige);
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-family: var(--font-body);
+  text-transform: uppercase;
+}
+
+p {
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}

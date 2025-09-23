@@ -1,0 +1,69 @@
+.gridWrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  background-color: #fdf6e3;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.backgroundIcon {
+  position: absolute;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.iconTopLeft {
+  top: -15%; 
+  left: -5%;  
+  width: clamp(120px, 40vw, 599px);
+  transform: scaleX(-1);
+}
+
+.iconTopRight {
+  top: -28%;  
+  right: -18%;
+  width: clamp(150px, 45vw, 736px);
+}
+
+.iconBottomLeft {
+  bottom: -28%; 
+  left: -18%;  
+  width: clamp(200px, 60vw, 1118px);
+}
+
+.iconBottomRight {
+  bottom: -35%; 
+  right: -8%;   
+  width: clamp(180px, 50vw, 1037px);
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 35rem;
+  aspect-ratio: 1 / 1;
+  border: 2px solid black; 
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  background-color: #fff; 
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+  
+.cellWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 2px solid black;
+}
+
+@media (max-width: 600px) {
+  .gridContainer {
+    width: 95vw;  /* use almost full width */
+  }
+}

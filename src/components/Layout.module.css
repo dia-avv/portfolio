@@ -1,0 +1,154 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background-color: var(--color-beige);
+  border-bottom: 2px var(--color-blue) solid;
+  max-width: 1000px;
+}
+
+.backButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.backArrow {
+  width: 24px;
+  height: 24px;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.navLink {
+  font-family: 'helvetica neue', sans-serif;
+  color: var(--color-blue);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  color: var(--color-orange);
+}
+
+/* Burger menu button */
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.burger span {
+  width: 24px;
+  height: 3px;
+  background-color: var(--color-blue);
+  display: block;
+  border-radius: 999px;
+}
+
+.headerBox {
+  position: sticky;         
+  top: 0;            
+  z-index: 1100;            
+  display: flex;
+  justify-content: center;
+  padding: 1rem;            
+  background-color: var(--color-orange);
+}
+
+/* Make the actual header look like a card inside the box */
+.headerBox .header {
+  width: min(80vw, 980px);   /* not full-width; feels like a card */
+  background-color: var(--color-beige);
+  border: 3px var(--color-blue) solid;
+  border-radius: 14px;
+  box-shadow: 0 6px 0 var(--color-blue); /* chunky outline vibe */
+  padding: 0.5rem 0.75rem;
+
+  /* kill the full-width underline you had */
+  border-bottom: none;
+}
+
+/* Ensure the off-canvas menu positions relative to the card */
+.headerBox .header {
+  position: relative;
+}
+
+/* Tweak: keep items aligned nicely inside the smaller box */
+.headerBox .nav {
+    gap: 1.5rem;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .burger {
+    display: flex;
+  }
+
+  /* Off-canvas nav: fixed to viewport, starts fully off-screen to the right */
+  .nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 60vw; /* half-ish screen */
+    background: var(--color-beige);
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    border-left: 2px var(--color-blue) solid;
+    z-index: 1000;
+
+    /* hidden state */
+    transform: translateX(100%);     /* 100% of its own width = fully off-screen */
+    transition: transform 0.3s ease; /* smooth slide */
+  }
+
+  .navLink {
+    font-size: 20px;
+  }
+
+  /* shown state */
+  .open {
+    transform: translateX(0);
+  }
+
+  /* dark overlay behind the menu */
+  .overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+  }
+
+  .overlay.open {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  /* header card tweaks stay as you had them */
+  .headerBox {
+    top: 0;
+    padding: 0.75rem;
+  }
+
+  .headerBox .header {
+    width: min(94vw, 680px);
+    padding: 0.5rem 0.5rem;
+    border-radius: 12px;
+  }
+}

@@ -1,0 +1,37 @@
+.footer {
+  background: var(--color-beige);
+  padding: 3rem clamp(1rem, 5vw, 6rem);
+  border-top: 3px solid var(--color-blue);
+  font-family: var(--font-body);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: var(--color-blue);
+  margin: 0 0 2rem 0;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  column-gap: 1rem;
+}
+
+.label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+  color: var(--color-blue);
+}
+
+.link {
+  color: gray;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--color-orange);
+}
