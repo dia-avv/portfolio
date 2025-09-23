@@ -13,6 +13,7 @@ type Project = {
   image: string;
   categories: string[];
   problem?: string;
+  concept?: string;
   problemPhoto?: string;
   process?: ProcessStep[];
   technologies?: Tech[];
@@ -51,11 +52,17 @@ export default function ProjectDetail() {
         <section className={styles.section}>
           <h2>Problem Statement</h2>
           <p>{project.problem}</p>
+        </section>
+      )}
+      {project.concept && (
+        <section className={styles.section}>
+          <h2>Concept</h2>
+          <p>{project.concept}</p>
           {project.problemPhoto && (
             <img
               className={styles.problemPhoto}
               src={asset(project.problemPhoto)}
-              alt="Problem context"
+              alt="Concept illustration"
             />
           )}
         </section>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useLocation, useNavigate, Link } from "react-router-dom";
 import styles from "./Layout.module.css";
+import ScrollToTop from "./ScrollToTop";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const navigate = useNavigate();
@@ -40,6 +41,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
     <div className="relative w-full min-h-screen overflow-x-hidden flex flex-col">
+      <ScrollToTop />
       {showHeader && (
         <div className={styles.headerBox}>
           <header className={styles.header}>

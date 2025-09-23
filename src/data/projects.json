@@ -6,7 +6,8 @@
     "image": "images/nhm.png",
     "categories": ["Frontend", "UX/UI", "Content Creation", "SoMe"],
     "problem": "How can The Naturhistorisk Museum use digital solutions to attract and engage an 18+ audience in a meaningful and feasible way?",
-    "problemPhoto": "images/nhm_problem.png",
+    "concept": "We created a museum app that combines practical information with immersive, interactive exhibition experiences. Visitors can explore through AR and interactive maps in The Global Backyard, or step into a branching narrative in Expedition to Africa, where they become part of a historical journey brought to life through storytelling and digital enhancements.",
+    "problemPhoto": "images/nhm-problem.png",
     "process": [
       {
         "title": "Research",
@@ -61,8 +62,9 @@
     "description": "An interactive museum app that guides visitors through the garden with storytelling, featuring chatbots that bring the plants to life.",
     "image": "images/botanical.png",
     "categories": ["Frontend", "UX/UI"],
+    "concept": "An interactive botanical garden app that uses location-based notifications to bring plants to life through AI-driven conversations. Visitors can follow tailored storylines—whether on a date, with children, or exploring alone—making each visit a unique, playful, and personal experience.",
     "problem": "How might we transform a passive and repetitive garden visit into an engaging, interactive adventure that keeps visitors connected and entertained?",
-    "problemPhoto": "images/botanical_problem.png",
+    "problemPhoto": "images/botanical-problem.png",
     "process": [
       {
         "title": "Research",
