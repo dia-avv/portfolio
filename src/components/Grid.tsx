@@ -2,10 +2,10 @@ import { useRef } from "react";
 import Cell from "./Cell";
 import { easeOut, motion, useInView } from "framer-motion";
 import styles from "./Grid.module.css";
-import shellBlue from "../images/shell-blue.png";
-import starfishBlue from "../images/starfish-blue.png";
-import palmtreeBlue from "../images/palmtree-blue.png";
-import wavesBlue from "../images/waves-blue.png";
+import shellBlue from "../assets/images/shell-blue.png";
+import starfishBlue from "../assets/images/starfish-blue.png";
+import palmtreeBlue from "../assets/images/palmtree-blue.png";
+import wavesBlue from "../assets/images/waves-blue.png";
 
 export default function Grid() {
   const titles: string[] = [

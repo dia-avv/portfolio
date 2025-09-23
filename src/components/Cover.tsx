@@ -1,10 +1,10 @@
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
 import styles from "./Cover.module.css";
-import waves from "../images/waves.png";
-import spiral from "../images/spiral.png";
-import starfish from "../images/starfish.png";
-import arrow from "../images/arrow.png";
+import waves from "../assets/images/waves.png";
+import spiral from "../assets/images/spiral.png";
+import starfish from "../assets/images/starfish.png";
+import arrow from "../assets/images/arrow.png";
 
 export default function Cover() {
   const controls = useAnimation();
