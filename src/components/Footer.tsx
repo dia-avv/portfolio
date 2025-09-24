@@ -36,7 +36,7 @@ export default function Footer() {
         <div>
           <span className={styles.label}>CV:</span>
           <a
-            href="/cv.pdf"
+            href="https://drive.google.com/file/d/1C-1NFNQYhAKplhWsM3j-C9kwKmjn6hbJ/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.link}
