@@ -20,6 +20,10 @@ import photoshop from "../assets/images/photoshop.png";
 import premierepro from "../assets/images/premierepro.png";
 import aftereffects from "../assets/images/aftereffects.png";
 import notion from "../assets/images/notion.png";
+import next from "../assets/images/nextjs.png";
+import supabase from "../assets/images/supabase.png";
+import wordpress from "../assets/images/wordpress.png";
+import magento from "../assets/images/magento.png";
 
 export default function AboutMe() {
   useEffect(() => {
@@ -57,7 +61,7 @@ export default function AboutMe() {
         <motion.div className={styles.banner} variants={itemVariants}>
           <h1 className={styles.title}>ABOUT ME</h1>
           <span className={styles.level}>
-            Multimedia Design @ Business Academy Aarhus
+            Digital Concept Development @ Business Academy Aarhus
           </span>
         </motion.div>
 
@@ -72,9 +76,7 @@ export default function AboutMe() {
           />
           <div className={styles.info}>
             <h2 className={styles.name}>Andreea-Valentina Vulpasu</h2>
-            <p className={styles.roles}>
-              Frontend Developer | Content Creator
-            </p>
+            <p className={styles.roles}>Frontend Developer | Content Creator</p>
           </div>
         </motion.div>
 
@@ -84,11 +86,14 @@ export default function AboutMe() {
           <motion.div className={styles.about} variants={itemVariants}>
             <h3>Get To Know Me</h3>
             <p>
-              I’m a Multimedia Design student at Business Academy Aarhus with a
-              strong focus on <strong>web development</strong> and{" "}
-              <strong>content creation</strong>. I’m passionate about crafting
-              engaging online experiences and helping ideas stand out through
-              design and interaction.
+              I’m a Digital Concept Development student at Business Academy
+              Aarhus with a strong focus on <strong>web development</strong> and{" "}
+              <strong>content creation</strong>. Before this, I studied
+              Multimedia Design, where I found myself especially drawn to the
+              more technical side of things, particularly{" "}
+              <strong>frontend development</strong>. I’m passionate about
+              creating engaging online experiences and bringing ideas to life
+              through design, code and interaction.
               <br />
               <br />
               I’m originally from Romania, now based in <strong>Aarhus</strong>.
@@ -98,7 +103,8 @@ export default function AboutMe() {
               <strong>Sudoku</strong> is my go-to (and the reason my portfolio
               looks the way it does!). I also play volleyball, love discovering
               Aarhus with friends and on quiet days you’ll probably find me
-              rewatching one of my favorite TV shows, <em>Friends</em>.<br />
+              rewatching one of my favorite TV shows, <em>Friends</em>.
+              <br />
               <br />
               🏎️ As a Formula 1 fan, my dream is to one day bring my creative
               skills into the world of motorsport media, combining speed,
@@ -123,16 +129,17 @@ export default function AboutMe() {
                 { src: vite, label: "Vite" },
                 { src: node, label: "Node.js" },
                 { src: framermotion, label: "Framer Motion" },
+                { src: next, label: "Next.js" },
+                { src: supabase, label: "Supabase" },
+                { src: wordpress, label: "WordPress" },
+                { src: magento, label: "Magento" },
               ].map((tool, i) => (
                 <motion.li
                   key={i}
                   variants={itemVariants}
                   whileHover={{ scale: 1.1 }}
                 >
-                  <motion.img
-                    src={tool.src}
-                    alt={tool.label}
-                  />
+                  <motion.img src={tool.src} alt={tool.label} />
                   <span>{tool.label}</span>
                 </motion.li>
               ))}
@@ -157,10 +164,7 @@ export default function AboutMe() {
                   variants={itemVariants}
                   whileHover={{ scale: 1.1 }}
                 >
-                  <motion.img
-                    src={tool.src}
-                    alt={tool.label}
-                  />
+                  <motion.img src={tool.src} alt={tool.label} />
                   <span>{tool.label}</span>
                 </motion.li>
               ))}
